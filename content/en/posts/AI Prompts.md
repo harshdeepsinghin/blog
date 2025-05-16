@@ -8,14 +8,6 @@ description: "These are some AI prompts I use very frequently."
 
 ## ⭐️ Context
 This note is about some AI prompts i frequently use.
-### Table of Content
-- [[#Syllabus to Tasks]]
-- [[#Syllabus Skimming]]
-- [[#Depth Subject Study]]
-- [[#Random Topic Revision]]
-- [[#Technical Documentation Writer]]
-- [[#PYQs Insights]]
-- [[#DeepSeek Text Concatenation]]
 
 ## 📝 Content
 
