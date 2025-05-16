@@ -1,0 +1,197 @@
+baseURL: "https://harshdeepsingh.in/blog/"
+title: "Harshdeep Singh"
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Harshdeep Singh
+  description:  "Harshdeep Singh's Blog: A digital space for all of my ideas, tips, knowledge or any kind of experience that i want to share to the public."
+  keywords: [Knowledge, Blog, Portfolio, Thoughts, Creations, Documents, Writing, Ideas, Personal, Notes, Tips]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "https://harshdeepsingh.sirv.com/Icons/profile-photo.ico"
+    favicon16x16: "https://harshdeepsingh.sirv.com/Icons/profile-photo.ico"
+    favicon32x32: "https://harshdeepsingh.sirv.com/Icons/profile-photo.ico"
+    apple_touch_icon: "https://harshdeepsingh.sirv.com/Icons/profile-photo.ico"
+    safari_pinned_tab: "https://harshdeepsingh.sirv.com/Icons/profile-photo.ico"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Harshdeep Singh"
+    subtitle: "Writer | Developer | Researcher"
+    imageUrl: "https://harshdeepsingh.sirv.com/Images/profile-photo-3.jpeg"
+    # imageWidth: 120
+    # imageHeight: 120
+    # imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: x
+      url: "https://x.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/harshdeepsinghin/blog/tree/main/content/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0w
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: harshdeepsingh.in
+      url: https://harshdeepsingh.in/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighbaseURL: "https://blog.harshdeepsingh.in/"
+title: Harshdeep's Blog
+theme: PaperMod
+params:
+  # defaultTheme: light
+  # defaultTheme: dark
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  editPost:
+    URL: "https://github.com/harshdeepsinghin/blog/tree/main/content/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+  defaultTheme: dark
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  author: ["Harshdeep"]
+  profileMode:
+        enabled: true
+        title: "Harshdeep Singh" # optional default will be site title
+        subtitle: "I am coder who often designs as well as a player of digital and musical signals."
+        imageUrl: "https://harshdeepsingh.sirv.com/Images/profile-photo-3.jpeg" # optional
+        imageTitle: "Harshdeep Singh image" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Github
+              url: "https://github.com/harshdeepsinghin"
+            - name: "Categories"
+              url: "categories"
+  socialIcons: # optional
+        - name: "Github"
+          url: "<link>"
+        - name: "Instagram"
+          url: "<link2>"
+        - name: Rss
+          url: "index.xml"
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en"
+  hi:
+    languageName: "हिंदी"
+    weight: 2
+    contentDir: "content/hi"
+
+
+
+outputs:
+  home: ["html" ,"rss", "json"]
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
